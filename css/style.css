@@ -1,0 +1,362 @@
+@import  url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins';
+}
+header{
+    background-image: url(../images/Picsart_22-05-03_22-56-04-865.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 60px;
+}
+header .navbar{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+header .navbar .navbar-toggler .navbar-toggler-icon{
+    color: #000;
+    background-color: #fff;
+}
+header .navbar-brand{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 30px;
+}
+.fa-solid, .fas{
+    color: #fff;
+    font-size: 30px;
+}
+header .navbar .navbar-nav{
+    margin-left:auto ;
+}
+header .navbar .navbar-nav .nav-item{
+    margin-right: 30px ;
+}
+header .navbar .navbar-nav .nav-item .nav-link{
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+}
+header .navbar .navbar-nav .nav-item .nav-link:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #fff;
+    width: 0;
+    position: absolute;
+    left: 3px;
+    -webkit-transition: 1s ease;
+    transition: .8s ease;
+  }
+  
+header .navbar .navbar-nav .nav-item .nav-link:hover:after { 
+    width: 90%; 
+  }
+  header .navbar .navbar-nav .nav-item .nav-link:focus::after{
+      width: 90%;
+  }  
+  header .noTransparrent{
+    background-color: #000;
+    box-shadow: 0 1px 20px rgb(255 255 255 / 10%);
+    width: 100%;
+    animation: fadeInDown 1s both 0.2s;
+  }
+header .heading .home{
+    padding-top: 180px;
+    padding-bottom: 100px;
+}
+header .heading .home .heading-text{
+    color: #fff;
+    margin-left: 30px;
+}
+header .heading .heading-text .sm-title {
+    font-size: 25px;
+}
+header .heading .heading-text h1{
+    margin-top: 20px;
+}
+header .heading .heading-text h1 span{
+    font-weight: 800;
+    margin-left: 10px;
+}
+header .heading .social-icons{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+header .heading .social-icons li {
+    display: inline;
+    margin-right: 30px;
+}
+header .heading .social-icons li a{
+    color: #fff;
+    font-size: 24px;
+}
+header .heading .scroll-down{
+    padding-top: 140px;
+}
+header .heading .scroll-down a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+main .about{
+    background-color: black;
+    padding-bottom: 60px;
+}
+main .about .col-md-7{
+    padding-left: 60px;
+}
+main .about .info-img{
+    padding-top: 50px;
+}
+main .about .info-text {
+    padding-top: 110px;
+}
+main .about .info-text h5 {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 0;
+    font-weight: 500;
+}
+main .about .info-text h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #fff;
+}
+main .about .info-text p{
+    color: #666666;
+}
+main .about .about-me div{
+    margin-bottom: 20px;
+    color: #666666;
+}
+main .about .about-me{
+    margin-top: 30px;
+}
+.about-me span {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    width: 150px;
+    margin-right: 30px;
+}
+.about-me span:after {
+    content: ":";
+    position: absolute;
+    right: 0;
+}
+main .about .about-btn{
+    position: relative;
+}
+main .about .about-btn a{
+    color: black;
+    font-size: 14px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    padding: 23px 40px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    background: #fff;
+    line-height: 10px;
+    border-radius: 30px;
+    border: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0s;
+}
+main .about .about-btn a:hover{
+    color: #fff;
+    background-color: black;
+    box-shadow: 0 0 0 2px #fff;
+}
+main .skills{
+    background-image: url(../images/desk-593327_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main .skills .overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 150px 0;
+}
+main .skills .overlay .stat p{
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+main .skills .overlay .stat .circle{
+    position: relative;
+}
+main .skills .overlay .stat .circle canvas{
+    background-color: #eef6ff;
+    padding: 10px;
+    border-radius: 50%;
+}
+main .skills .overlay .stat .circle span{    
+    position: absolute;
+    color: #000;
+    font-size: 24px;
+    top: 31%;
+    left: 43%
+}
+main .work{
+    padding: 60px 0 60px 0 ;
+    background: #0F1113;
+}
+main .work::after{
+    display: block;
+    height: 30px;
+    width: 3px;
+    bottom: 70px;
+    left: 50%;
+}
+main .work .my-work h1{
+    color: #fff;
+    margin-bottom: 70px;
+}
+main .work .my-work a{
+    text-decoration: none;
+    color: #fff;
+}
+main .work .my-work .card{
+    background-color: #000;
+    transition: .5s ease;
+}
+main .work .my-work .pages .card:hover{
+    transform: translateY(-5px);
+}
+main .work .my-work .coming-soon{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+main .work .my-work .coming-soon .card{
+    background-color: #0F1113;
+    border: 2px solid #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 50px;
+}
+main .work .my-work .coming-soon .card h5{
+    font-size: 24px;
+}
+main .contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #000;
+}
+main .contact h1{
+    color: #fff;
+    margin-bottom: 70px;
+}
+main .contact .contact-info{
+    background: #fafafa;
+    padding-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+main .contact .contact-div{
+    padding-bottom: 30px;
+}
+main .contact .contact-info .contact-div i{
+    color: #000;
+    font-size: 30px;
+}
+main .contact .contact-info .contact-div h5{
+    color: #000;
+    margin: 15px 0 0;
+    font-size: 18px;
+}
+main .contact .form-control{
+    background: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+    color: #666;
+    box-shadow: none;
+    font-size: 15px;
+    height: 45px;
+    margin-bottom: 15px;
+}
+textarea{
+    height: 220px !important;
+}
+main .contact .form-group button{
+    color: #000;
+    font-size: 14px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    padding-bottom: 23px;
+    padding-top: 23px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    background: #fff;
+    line-height: 10px;
+    border-radius: 30px;
+    border: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0s;
+}
+main .contact .form-group button:hover{
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 0 0 2px #fff;
+}
+footer{
+    padding: 30px 0;
+    background: #1a1a1a;
+}
+footer .copy-right{
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+@media(max-width : 1200px ){
+    main .skills .overlay .stat .circle span{
+        left: 43%;
+    }
+}
+@media(max-width : 992px ){
+    main .skills .overlay .stat .circle span{
+        left: 38%;
+    }
+}
+@media(max-width : 768px ){
+    main .skills .overlay .stat .circle span{
+        left: 41%;
+    }
+}
+@media(max-width : 576px ){
+    main .skills .overlay .stat .circle span{
+        left: 46%;
+    }
+}
+@media(max-width : 768px ){
+    main .contact .contact-form{
+        margin-top: 30px;
+    }
+}
+@media(max-width : 576px ){
+    main .skills .overlay .stat .circle span{
+        left: 46%;
+    }
+    main .skills .overlay .stat{
+        margin-bottom: 50px;
+    }
+    main .skills .overlay {
+        padding: 100px 0;
+    }
+    main .skills .overlay .stat p{
+        margin-top: 10px;
+    }
+}
