@@ -27,9 +27,10 @@ header .navbar-brand{
     color: #fff;
     margin-left: 30px;
 }
-.fa-solid, .fas{
+header .fa-solid, .fas , .contact .fa-solid, .fas{
     color: #fff;
     font-size: 30px;
+    animation: fa .9s ease-in-out alternate infinite;
 }
 header .navbar .navbar-nav{
     margin-left:auto ;
@@ -74,25 +75,38 @@ header .heading .home .heading-text{
     color: #fff;
     margin-left: 30px;
 }
+header .heading .heading-text{
+    overflow: hidden;
+}
 header .heading .heading-text .sm-title {
     font-size: 25px;
+    display: inline-block;
+    transform: translatey(-100%);
+    transition: all 1s ease;
 }
 header .heading .heading-text h1{
     margin-top: 20px;
+    transform: translateX(-100%);
+    transition: all 2s ease;
 }
 header .heading .heading-text h1 span{
     font-weight: 800;
     margin-left: 10px;
+    
 }
 header .heading .social-icons{
     list-style: none;
     padding-left: 0;
     margin-top: 30px;
     margin-left: 30px;
+    overflow: hidden;
 }
 header .heading .social-icons li {
     display: inline;
     margin-right: 30px;
+    transform: translateY(100%) ;
+    display: inline-block;
+    transition: all 2.5s ease;
 }
 header .heading .social-icons li a{
     color: #fff;
@@ -115,6 +129,10 @@ main .about .col-md-7{
 }
 main .about .info-img{
     padding-top: 50px;
+    transform: translate(-100% ,-100%);
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+    
 }
 main .about .info-text {
     padding-top: 110px;
@@ -124,15 +142,29 @@ main .about .info-text h5 {
     color: #fff;
     margin-top: 0;
     font-weight: 500;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease;
 }
 main .about .info-text h2{
     font-size: 30px;
     font-weight: 600;
     margin: 15px 0;
     color: #fff;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.info-text .animation, 
+.info-text .animation{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
 }
 main .about .info-text p{
     color: #666666;
+    transform: translateX(-30%);
+    opacity: 0;
+    transition: all 1.5s ease;
 }
 main .about .about-me div{
     margin-bottom: 20px;
@@ -140,6 +172,12 @@ main .about .about-me div{
 }
 main .about .about-me{
     margin-top: 30px;
+}
+.about-me p{
+    display: inline;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease;
 }
 .about-me span {
     display: inline-block;
@@ -149,7 +187,11 @@ main .about .about-me{
     color: #fff;
     width: 150px;
     margin-right: 30px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 1s ease;
 }
+
 .about-me span:after {
     content: ":";
     position: absolute;
@@ -170,6 +212,8 @@ main .about .about-btn a{
     line-height: 10px;
     border-radius: 30px;
     border: none;
+    transform: translateX(59%);
+    opacity: 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out 0s;
 }
@@ -178,6 +222,7 @@ main .about .about-btn a:hover{
     background-color: black;
     box-shadow: 0 0 0 2px #fff;
 }
+
 main .skills{
     background-image: url(../images/desk-593327_1920.jpg);
     background-position: center;
@@ -197,6 +242,9 @@ main .skills .overlay .stat p{
 }
 main .skills .overlay .stat .circle{
     position: relative;
+    transform: translatex(-50%);
+    opacity: 0;
+    transition: all 1s ease;
 }
 main .skills .overlay .stat .circle canvas{
     background-color: #eef6ff;
@@ -231,10 +279,13 @@ main .work .my-work a{
 }
 main .work .my-work .card{
     background-color: #000;
-    transition: .5s ease;
+    transition: 1s ease;
+    transform: translateX(-50%);
+    opacity: 0;
 }
+
 main .work .my-work .pages .card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-5px) !important;
 }
 main .work .my-work .coming-soon{
     padding-left: 30px;
@@ -246,6 +297,10 @@ main .work .my-work .coming-soon .card{
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 50px;
+    transform: translateY(50%) !important;
+}
+main .work .my-work .coming-soon .card:hover{
+    transform: translateY(50%) !important;
 }
 main .work .my-work .coming-soon .card h5{
     font-size: 24px;
@@ -264,6 +319,14 @@ main .contact .contact-info{
     padding-top: 30px;
     border-radius: 10px;
     text-align: center;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+main .contact .contact-form{
+    transform: translatey(50%);
+    opacity: 0;
+    transition: all 1s ease;
 }
 main .contact .contact-div{
     padding-bottom: 30px;
@@ -319,6 +382,97 @@ footer .copy-right{
     text-align: center;
     color: #fff;
     margin: 0;
+}
+
+.animation{
+    transform: translateX(0) !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+/*//////////////////*/
+
+html {
+    height: 100%;
+  }
+  
+  body {
+    background-color: #000;
+  }
+  
+  .loader {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+  }
+  
+  .inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  
+  }
+  
+  .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #EFEFFA;
+  }
+  
+  .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #EFEFFA;
+  }
+  
+  .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #EFEFFA;
+  }
+  
+  @keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }
+
+@keyframes fa{
+    from{
+        transform: translateY(-10%);
+    }
+    to{
+        transform: translateY(50%);
+    }
 }
 
 @media(max-width : 1200px ){
