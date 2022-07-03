@@ -61,6 +61,8 @@ $(window).scroll(function() {
     }
     if(contactinfo>0 && $(window).scrollTop() + 430 >= contactinfo ) {              
         $(".contact-info").addClass("animation");
+    }
+    if(contactform>0 && $(window).scrollTop() + 430 >= contactform ) {              
         $(".contact-form").addClass("animation");
     }
 });
