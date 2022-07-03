@@ -71,7 +71,35 @@ const load = document.querySelector('.loader');
 
 window.addEventListener('load', function(){
     load.style.display= 'none';
-})
+});
+
+const topspan = document.querySelector('.bar1')
+const bottomspan = document.querySelector('.bar3');
+const middelespan = document.querySelector('.bar2');
+const button = document.querySelector('.navbar-toggler');
+
+function classtoggle(){
+    topspan.classList.toggle('top-span-amimation');
+    bottomspan.classList.toggle('bottom-span-amimation');
+    middelespan.classList.toggle('middle-span-amimation');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
