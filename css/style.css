@@ -7,9 +7,10 @@ body{
     font-family: 'Poppins';
 }
 header{
-    background-image: url(../images/Picsart_22-05-03_22-56-04-865.jpg);
-    background-position: bottom;
-    background-size: cover;
+    background-image: url(../images/WhatsApp\ Image\ 2025-02-02\ at\ 2.15.30\ AM.jpeg);
+    background-position: right;
+    background-size: 35%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     padding-top: 60px;
 }
